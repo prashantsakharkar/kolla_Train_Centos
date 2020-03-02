@@ -12,5 +12,4 @@ systemctl daemon-reload
 systemctl restart docker
 systemctl status docker
 
-
-
+mkdir -p /etc/ceph

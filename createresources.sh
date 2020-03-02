@@ -17,7 +17,7 @@ source /etc/kolla/admin-openrc.sh
 #Test resources
 /usr/local/bin/openstack domain create --enable --description trilio-test-domain trilio-test-domain
 
-/usr/local/bin/openstack --domain trilio-test-domain --email trilio.build@trilio.io --password password --description trilio-test-user --enable trilio-test-user
+/usr/local/bin/openstack user create --domain trilio-test-domain --email trilio.build@trilio.io --password password --description trilio-test-user --enable trilio-test-user
 
 /usr/local/bin/openstack user create --domain trilio-test-domain --email trilio.build@trilio.io --password password --description trilio-test-user --enable trilio-admin-user
 
